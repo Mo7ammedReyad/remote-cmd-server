@@ -1,0 +1,8 @@
+{
+  "name": "remote-cmd-server",
+  "type": "module",
+  "exports": "./index.ts",
+  "dependencies": {
+    "hono": "^3.12.8"
+  }
+}
