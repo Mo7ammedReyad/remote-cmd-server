@@ -3,7 +3,8 @@ import { html } from 'hono/html'
 
 const app = new Hono()
 
-const page = html\`
+const page = html`
+
   <!DOCTYPE html>
   <html lang="en">
   <head>
