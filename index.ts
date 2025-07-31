@@ -4,7 +4,6 @@ import { html } from 'hono/html'
 const app = new Hono()
 
 const page = html`
-
   <!DOCTYPE html>
   <html lang="en">
   <head>
@@ -21,20 +20,20 @@ const page = html`
 
     <script type="module">
       async function sendCommand(e) {
-        e.preventDefault()
-        const cmd = document.getElementById('cmd').value
+        e.preventDefault();
+        const cmd = document.getElementById('cmd').value;
         const res = await fetch('/cmd', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({ cmd })
-        })
-        const json = await res.json()
-        document.getElementById('output').innerText = json.status
+        });
+        const json = await res.json();
+        document.getElementById('output').innerText = json.status;
       }
     </script>
   </body>
   </html>
-\`
+`
 
 app.get('/', (c) => c.html(page))
 
