@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "isolatedModules": true,
+    "lib": ["DOM", "ESNext"],
+    "types": [],
+    "skipLibCheck": true,
+    "allowJs": true,
+    "noEmit": true
+  },
+  "include": ["index.ts"]
+}
