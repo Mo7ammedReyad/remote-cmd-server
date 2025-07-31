@@ -1,8 +1,18 @@
 {
-  "name": "remote-cmd-server",
-  "type": "module",
-  "exports": "./index.ts",
+  "name": "hono-remote-executor",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev"
+  },
   "dependencies": {
+    "firebase": "^10.7.1",
     "hono": "^3.12.8"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20231218.0",
+    "wrangler": "^3.22.1"
   }
 }
